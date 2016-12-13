@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_books"
+    style="@style/AppTheme.Card.Margins"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_background"
+            android:layout_width="60dp"
+            android:layout_height="92dp"
+            android:src="@drawable/cardmg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_alignTop="@+id/text_books_description" />
+
+
+         <TextView
+                android:id="@+id/text_books_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:paddingBottom="@dimen/margin_normal"
+                android:paddingLeft="@dimen/margin_large"
+                android:paddingRight="@dimen/margin_large"
+                android:paddingTop="@dimen/margin_small"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="#555555"
+                android:textStyle="bold"
+             android:layout_centerVertical="true"
+             android:layout_alignRight="@+id/text_books_author"
+             android:layout_alignEnd="@+id/text_books_author"
+             android:layout_toRightOf="@+id/image_background"
+             android:layout_toEndOf="@+id/image_background"
+             android:layout_margin="2dp"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/text_books_author"
+            android:textStyle="italic"
+            android:textSize="@dimen/text_size_medium"
+            android:paddingRight="@dimen/margin_large"
+            android:paddingLeft="@dimen/margin_large"
+            android:layout_alignBottom="@+id/image_background"
+            android:layout_toRightOf="@+id/image_background"
+            android:layout_toEndOf="@+id/image_background" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
